@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .search-bar {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .search-bar>input, .search-bar>label {
+    display: block;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid #aed6d6;
+    background-color: rgb(252, 252, 253); /* ให้เปลี่ยนสีพื้นหลังเป็น lavender */
+    content: '\1F50D';
+    position: relative;
+  }
+  
+  .search-bar>label::before {
+    content: '\1F50D'; /* รหัส Unicode ของไอคอนแว่นขยาย */
+    font-size: 18px;
+    color: rgb(252, 252, 253); /* สีของไอคอน */
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .filter-table {
+    margin: 20px auto;
+    width: 50%;
+  }
+  
+  .product-table {
+    width: 300px;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  .product-table th, .product-table td {
+    border: 1px solid rgb(17, 17, 17);
+    padding: 2px 4px;
+    background-color: rgb(243, 243, 248); /* ให้เปลี่ยนสีพื้นหลังเป็น mediumorchid */
+  }
+  
+  .category-row {
+    text-align: center;
+  }
+  
+  /* Class utility */
+  .text-red {
+    color: red;
+  }
+  body {
+    background-color: aqua;
+  }
+  
