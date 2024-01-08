@@ -8,6 +8,9 @@ function Navbar() {
       <Link to="/about">About</Link>
       <Link to="/contact">Contact</Link>
       <Link to="/private">Private</Link>
+      {/* {[1, 2, 3, 4].map(el=>(
+        <Link key={el} to={`/product/${el}`}>product{el}</Link>
+      ))} */}
     </nav>
   )
 }
